@@ -6,7 +6,7 @@
 /*   By: mdanglad <mdanglad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 11:29:47 by mdanglad          #+#    #+#             */
-/*   Updated: 2021/11/02 14:54:47 by mdanglad         ###   ########.fr       */
+/*   Updated: 2021/11/02 17:57:43 by ramzi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ char	*ft_strdup(char *s1)
 	return (str);
 }
 
-char	*line_filler(char *str, char* line)
+char	*line_filler(char *str, char *line)
 {
 	size_t	i;
 
@@ -42,7 +42,6 @@ char	*line_filler(char *str, char* line)
 		return (NULL);
 	while (str[i] != '\n' && str[i] != '\0')
 	{
-
 		line[i] = str[i];
 		i++;
 	}
@@ -67,7 +66,7 @@ size_t	new_line_flag(char *str)
 
 char	*malloc_line(char *str)
 {
-	int	i;
+	int		i;
 	char	*line;
 
 	i = 0;
@@ -75,7 +74,7 @@ char	*malloc_line(char *str)
 	{
 		while (str[i] != '\n')
 			i++;
-		line = (char*)malloc(sizeof(char) * (i + 2));
+		line = (char *)malloc(sizeof(char) * (i + 2));
 		if (!line)
 			return (NULL);
 	}
@@ -83,7 +82,7 @@ char	*malloc_line(char *str)
 	{
 		while (str[i] != '\0')
 			i++;
-		line = (char*)malloc(sizeof(char) * (i + 1));
+		line = (char *)malloc(sizeof(char) * (i + 1));
 		if (!line)
 			return (NULL);
 	}
@@ -95,7 +94,7 @@ char	*get_next_line(int fd)
 	char		buf[BUFFER_SIZE + 1];
 	static char	*str[1024];
 	char		*line;
-	int		ret;
+	int			ret;
 
 	line = NULL;
 	ret = 1;

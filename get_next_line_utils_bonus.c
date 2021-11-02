@@ -6,7 +6,7 @@
 /*   By: mdanglad <mdanglad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/18 16:42:29 by mdanglad          #+#    #+#             */
-/*   Updated: 2021/10/31 19:37:38 by mdanglad         ###   ########.fr       */
+/*   Updated: 2021/11/02 18:03:04 by ramzi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,9 +49,9 @@ char	*ft_strjoin(char *s1, char *s2)
 
 char	*trim_static(char *str, char *line, int ret)
 {
-	int	len_str;
-	int	len_line;
-	int	new_len;
+	int		len_str;
+	int		len_line;
+	int		new_len;
 	char	*new_str;
 
 	len_str = len(str);
