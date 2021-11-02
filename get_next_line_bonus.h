@@ -6,7 +6,7 @@
 /*   By: mdanglad <mdanglad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/18 18:22:18 by mdanglad          #+#    #+#             */
-/*   Updated: 2021/11/02 18:02:24 by ramzi            ###   ########.fr       */
+/*   Updated: 2021/11/02 18:20:38 by mdanglad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <unistd.h>
 # include <stdlib.h>
+# include <fcntl.h>
 
 char	*get_next_line(int fd);
 char	*trim_static(char *str, char *line, int ret);

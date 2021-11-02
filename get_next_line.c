@@ -6,12 +6,11 @@
 /*   By: mdanglad <mdanglad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 11:29:47 by mdanglad          #+#    #+#             */
-/*   Updated: 2021/11/02 17:59:05 by ramzi            ###   ########.fr       */
+/*   Updated: 2021/11/02 18:29:02 by mdanglad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
-#include <stdio.h>
 
 char	*ft_strdup(char *s1)
 {
